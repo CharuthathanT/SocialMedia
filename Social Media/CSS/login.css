@@ -1,0 +1,125 @@
+.content {
+    background-image: url("https://img.freepik.com/free-photo/round-particle-lines-futuristic-gradient-wallpaper_53876-97643.jpg?t=st=1711168614~exp=1711172214~hmac=896ec05b2ffea6355ba307b4d3c15410eb908a7fce7c3f4e57202c3a0bdf7cc4&w=1060");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: #03a9f4; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {    
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start ;
+    align-items: center;
+    display: block;
+}
+
+.login-container h2 {
+    text-align: center;
+    color:#2a113c;
+}
+
+.login-form {
+    padding-top: 50px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+.form-group label {
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    translate: 0.625rem 0.625rem;
+    color :#0c245a;
+    background-color: #fff;    
+    padding-inline: 0.25em; 
+    pointer-events: none;
+    transition: translate 250ms,background-color 250ms,border-color 250ms;
+    margin-bottom: 5px;
+}
+
+.form-group:focus-within label,
+.form-group:not(:has(:placeholder-shown))
+label{
+    translate: 0.625rem -1rem;
+    border-color: #030104;
+}
+.form-group::placeholder{
+    color: transparent;
+}
+
+.form-group input {
+    width: 100%;
+    color: #565656;
+    background: none;
+    padding: 0.625rem;
+    border: 2px solid #030104;
+    border-radius: 16px;
+
+}
+
+button[type="submit"] {
+    /* width: 250px; */
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.field {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.field label {
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    translate: 0.625rem 0.625rem;
+    color :#030104;
+    background-color: #efe4f7;
+    padding-inline: 0.25em;
+    border: 2px solid transparent;
+    pointer-events: none;
+    transition: translate 250ms,background-color 250ms,border-color 250ms;
+    margin-bottom: 5px;
+}
+
+.field:focus-within label,
+.field:not(:has(:placeholder-shown))
+label{
+    translate: 0.625rem -1rem;
+    border-color: #030104;
+}
+.field::placeholder{
+    color: transparent;
+}
